@@ -25,9 +25,7 @@ public function createUser(User $user)
 }
 ```
 В аннотации требуется указать идентификатор сервиса в контейнере зависмостей.
-Сервис должен быть наследником класса
-
-    SibSet\Bundle\AopBundle\Aspect\Logging\AbstractWriter
+Сервис должен быть наследником класса `SibSet\Bundle\AopBundle\Aspect\Logging\AbstractWriter`
 
 ### Transaction
 
