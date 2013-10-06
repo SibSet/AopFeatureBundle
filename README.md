@@ -13,6 +13,7 @@
 
 ```php
 <?php
+
 use SibSet\Bundle\AopBundle\Annotation as Aspect;
 
 /**
@@ -34,6 +35,7 @@ public function createUser(User $user)
 
 ```php
 <?php
+
 use SibSet\Bundle\AopBundle\Annotation as Aspect;
 
 /**
@@ -54,6 +56,7 @@ public function createUser(User $user)
 
 ```php
 <?php
+
 use SibSet\Bundle\AopBundle\Annotation as Aspect;
 
 /**
@@ -83,3 +86,21 @@ public function createUser(User $user)
         "sibset/aop-bundle": ">=1.0.0"
         # ..
     }
+
+### AppKernel.php
+
+```php
+<?php
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new JMS\AopBundle\JMSAopBundle(),
+        new SibSet\Bundle\SibSetAopBundle(),
+    );
+
+    // ...
+
+    return $bundles;
+}
+```
