@@ -1,0 +1,30 @@
+{
+    "name": "sibset/aop-bundle",
+    "license": "MIT",
+    "keywords": ["aop", "annotations"],
+    "type": "symfony-bundle",
+    "description": "AOP features for Symfony 2",
+    "authors": [
+        {
+            "name": "Pavel Gopanenko",
+            "email": "p.gopanenko@sibset-team.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "jms/aop-bundle": ">=1.0.0"
+    },
+    "require-dev": {
+        "doctrine/orm": ">=2.2,<2.5-dev",
+        "doctrine/doctrine-bundle": ">=1.2.0"
+    },
+    "suggest": {
+        "doctrine/doctrine-bundle": "The Doctrine Symfony bundle.",
+        "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
+    },
+    "autoload": {
+        "psr-0": { "SibSet\\Bundle\\AopBundle": "" }
+    },
+    "target-dir": "SibSet/Bundle/AopBundle",
+    "minimum-stability": "stable"
+}

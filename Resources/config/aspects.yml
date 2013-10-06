@@ -1,0 +1,45 @@
+parameters:
+    sibset_aop.aspect.suppress_exception.pointcut.class: SibSet\Bundle\AopBundle\Aspect\SuppressException\SuppressExceptionPointcut
+    sibset_aop.aspect.suppress_exception.interceptor.class: SibSet\Bundle\AopBundle\Aspect\SuppressException\SuppressExceptionInterceptor
+
+    sibset_aop.aspect.transaction.pointcut.class: SibSet\Bundle\AopBundle\Aspect\Transaction\TransactionPointcut
+    sibset_aop.aspect.transaction.interceptor.class: SibSet\Bundle\AopBundle\Aspect\Transaction\TransactionInterceptor
+
+    sibset_aop.aspect.logging.pointcut.class: SibSet\Bundle\AopBundle\Aspect\Logging\LoggingPointcut
+    sibset_aop.aspect.logging.interceptor.class: SibSet\Bundle\AopBundle\Aspect\Logging\LoggingInterceptor
+
+services:
+
+    # Suppress Exception Aspect
+    sibset_aop.aspect.suppress_exception.pointcut:
+        class: %sibset_aop.aspect.suppress_exception.pointcut.class%
+        arguments: [ @annotation_reader ]
+        tags:
+            - { name: jms_aop.pointcut, interceptor: sibset_aop.aspect.suppress_exception.interceptor }
+    sibset_aop.aspect.suppress_exception.interceptor:
+        class: %sibset_aop.aspect.suppress_exception.interceptor.class%
+        arguments: [ @annotation_reader ]
+
+    # Transcation Aspect
+    sibset_aop.aspect.transaction.pointcut:
+        class: %sibset_aop.aspect.transaction.pointcut.class%
+        arguments: [ @annotation_reader ]
+        tags:
+            - { name: jms_aop.pointcut, interceptor: sibset_aop.aspect.transaction.interceptor }
+    sibset_aop.aspect.transaction.interceptor:
+        class: %sibset_aop.aspect.transaction.interceptor.class%
+        arguments: [ @doctrine ]
+
+    # Logging Aspect
+    sibset_aop.aspect.logging.pointcut:
+        class: %sibset_aop.aspect.logging.pointcut.class%
+        arguments: [ @annotation_reader ]
+        tags:
+            - { name: jms_aop.pointcut, interceptor: sibset_aop.aspect.logging.interceptor }
+    sibset_aop.aspect.logging.interceptor:
+        class: %sibset_aop.aspect.logging.interceptor.class%
+        arguments: [ @annotation_reader, @logger ]
+        calls:
+            - [ setContainer, [ @service_container ] ]
+
+

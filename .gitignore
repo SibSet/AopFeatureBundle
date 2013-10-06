@@ -1,0 +1,12 @@
+.buildpath
+.project
+.settings/
+.idea/
+
+log/
+report/
+vendor/
+phpunit.xml
+phpdoc.xml
+
+composer.lock
