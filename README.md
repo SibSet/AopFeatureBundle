@@ -1,5 +1,7 @@
 # AOP Features Bundle
 
+[![Build Status](https://travis-ci.org/SibSet/AopBundle.png?branch=master)](https://travis-ci.org/SibSet/AopBundle)
+
 Расширение Symfony Framework для аспектно-ориентированного программирования.
 Добавляет возможность указвывать аспекты для методов, уменьшая количество сквозного кода в приложении.
 
