@@ -83,7 +83,7 @@ public function createUser(User $user)
 
     "require": {
         # ..
-        "sibset/aop-bundle": ">=1.0.0"
+        "sibset/aop-feature-bundle": ">=1.0.0"
         # ..
     }
 
