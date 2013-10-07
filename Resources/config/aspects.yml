@@ -8,6 +8,9 @@ parameters:
     sibset_aop.aspect.logging.pointcut.class: SibSet\Bundle\AopFeatureBundle\Aspect\Logging\LoggingPointcut
     sibset_aop.aspect.logging.interceptor.class: SibSet\Bundle\AopFeatureBundle\Aspect\Logging\LoggingInterceptor
 
+    sibset_aop.aspect.validation.pointcut.class: SibSet\Bundle\AopFeatureBundle\Aspect\Validation\ValidationPointcut
+    sibset_aop.aspect.validation.interceptor.class: SSibSet\Bundle\AopFeatureBundle\Aspect\Validation\ValidationInterceptor
+
 services:
 
     # Suppress Exception Aspect
@@ -42,4 +45,12 @@ services:
         calls:
             - [ setContainer, [ @service_container ] ]
 
-
+    # Validation Aspect
+    sibset_aop.aspect.validation.pointcut:
+        class: %sibset_aop.aspect.validation.pointcut.class%
+        arguments: [ @annotation_reader ]
+        tags:
+            - { name: jms_aop.pointcut, interceptor: sibset_aop.aspect.validation.interceptor }
+    sibset_aop.aspect.validation.interceptor:
+        class: %sibset_aop.aspect.validation.interceptor.class%
+        arguments: [ @validator ]

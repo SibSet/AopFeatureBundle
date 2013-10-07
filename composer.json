@@ -16,11 +16,13 @@
     },
     "require-dev": {
         "doctrine/orm": ">=2.2,<2.5-dev",
-        "doctrine/doctrine-bundle": ">=1.2.0"
+        "doctrine/doctrine-bundle": ">=1.2.0",
+        "symfony/validator": ">=2.1"
     },
     "suggest": {
         "doctrine/doctrine-bundle": "The Doctrine Symfony bundle.",
-        "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
+        "doctrine/orm": "The Doctrine ORM integration is optional in the bundle.",
+        "symfony/validator": "Integration aspect with validation."
     },
     "autoload": {
         "psr-0": { "SibSet\\Bundle\\AopFeatureBundle": "" }
