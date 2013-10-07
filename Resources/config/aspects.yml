@@ -9,7 +9,7 @@ parameters:
     sibset_aop.aspect.logging.interceptor.class: SibSet\Bundle\AopFeatureBundle\Aspect\Logging\LoggingInterceptor
 
     sibset_aop.aspect.validation.pointcut.class: SibSet\Bundle\AopFeatureBundle\Aspect\Validation\ValidationPointcut
-    sibset_aop.aspect.validation.interceptor.class: SSibSet\Bundle\AopFeatureBundle\Aspect\Validation\ValidationInterceptor
+    sibset_aop.aspect.validation.interceptor.class: SibSet\Bundle\AopFeatureBundle\Aspect\Validation\ValidationInterceptor
 
 services:
 
