@@ -2,6 +2,6 @@
 
 namespace SibSet\Bundle\AopFeatureBundle\Exception;
 
-class AnnotationException extends AopFeatureException
+class AopFeatureException extends \Exception
 {
 }

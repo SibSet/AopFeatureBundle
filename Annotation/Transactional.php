@@ -1,6 +1,6 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Annotation;
+namespace SibSet\Bundle\AopFeatureBundle\Annotation;
 
 use Doctrine\Common\Annotations\Annotation;
 

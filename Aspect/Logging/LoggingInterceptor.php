@@ -1,14 +1,14 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Aspect\Logging;
+namespace SibSet\Bundle\AopFeatureBundle\Aspect\Logging;
 
 use CG\Proxy\MethodInterceptorInterface;
 use CG\Proxy\MethodInvocation;
 use Doctrine\Common\Annotations\Reader;
 use Psr\Log\LoggerInterface;
-use SibSet\Bundle\AopBundle\Annotation\Logging;
-use SibSet\Bundle\AopBundle\Exception\AnnotationException;
-use SibSet\Bundle\AopBundle\Exception\AopException;
+use SibSet\Bundle\AopFeatureBundle\Annotation\Logging;
+use SibSet\Bundle\AopFeatureBundle\Exception\AnnotationException;
+use SibSet\Bundle\AopFeatureBundle\Exception\AopFeatureException;
 use Symfony\Component\DependencyInjection\ContainerAware;
 
 class LoggingInterceptor extends ContainerAware implements MethodInterceptorInterface
@@ -42,7 +42,7 @@ class LoggingInterceptor extends ContainerAware implements MethodInterceptorInte
         $writer = $this->container->get($annotation->value);
 
         if (!($writer instanceof AbstractWriter)) {
-            throw new AopException('Writer should be the implementation of AbstractWriter');
+            throw new AopFeatureException('Writer should be the implementation of AbstractWriter');
         }
 
         try {

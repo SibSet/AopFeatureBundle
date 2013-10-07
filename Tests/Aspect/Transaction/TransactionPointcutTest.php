@@ -1,9 +1,9 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Tests\Aspect\Annotation;
+namespace SibSet\Bundle\AopFeatureBundle\Tests\Aspect\Annotation;
 
 use Doctrine\Common\Annotations\AnnotationReader;
-use SibSet\Bundle\AopBundle\Aspect\Transaction\TransactionPointcut;
+use SibSet\Bundle\AopFeatureBundle\Aspect\Transaction\TransactionPointcut;
 
 class TransactionPointcutTest extends \PHPUnit_Framework_TestCase
 {

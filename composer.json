@@ -1,5 +1,5 @@
 {
-    "name": "sibset/aop-bundle",
+    "name": "sibset/aop-feature-bundle",
     "license": "MIT",
     "keywords": ["aop", "annotations"],
     "type": "symfony-bundle",

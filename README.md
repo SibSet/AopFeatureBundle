@@ -1,6 +1,6 @@
 # AOP Features Bundle
 
-[![Build Status](https://travis-ci.org/SibSet/AopBundle.png?branch=master)](https://travis-ci.org/SibSet/AopBundle)
+[![Build Status](https://travis-ci.org/SibSet/AopFeaturesBundle.png?branch=master)](https://travis-ci.org/SibSet/AopFeaturesBundle)
 
 Расширение Symfony Framework для аспектно-ориентированного программирования.
 Добавляет возможность указвывать аспекты для методов, уменьшая количество сквозного кода в приложении.
@@ -16,7 +16,7 @@
 ```php
 <?php
 
-use SibSet\Bundle\AopBundle\Annotation as Aspect;
+use SibSet\Bundle\AopFeatureBundle\Annotation as Aspect;
 
 /**
  * @Aspect\Logging("log.message.writer.user.create")
@@ -27,7 +27,7 @@ public function createUser(User $user)
 }
 ```
 В аннотации требуется указать идентификатор сервиса в контейнере зависмостей.
-Сервис должен быть наследником класса `SibSet\Bundle\AopBundle\Aspect\Logging\AbstractWriter`
+Сервис должен быть наследником класса `SibSet\Bundle\AopFeatureBundle\Aspect\Logging\AbstractWriter`
 
 ### Transaction
 
@@ -36,7 +36,7 @@ public function createUser(User $user)
 ```php
 <?php
 
-use SibSet\Bundle\AopBundle\Annotation as Aspect;
+use SibSet\Bundle\AopFeatureBundle\Annotation as Aspect;
 
 /**
  * @Aspect\Transactional
@@ -57,7 +57,7 @@ public function createUser(User $user)
 ```php
 <?php
 
-use SibSet\Bundle\AopBundle\Annotation as Aspect;
+use SibSet\Bundle\AopFeatureBundle\Annotation as Aspect;
 
 /**
  * @Aspect\SuppressException

@@ -1,6 +1,6 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\DependencyInjection;
+namespace SibSet\Bundle\AopFeatureBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

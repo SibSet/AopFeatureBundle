@@ -1,12 +1,12 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Aspect\SuppressException;
+namespace SibSet\Bundle\AopFeatureBundle\Aspect\SuppressException;
 
 use CG\Proxy\MethodInterceptorInterface;
 use CG\Proxy\MethodInvocation;
 use Doctrine\Common\Annotations\AnnotationException;
 use Doctrine\Common\Annotations\Reader;
-use SibSet\Bundle\AopBundle\Annotation\SuppressException;
+use SibSet\Bundle\AopFeatureBundle\Annotation\SuppressException;
 
 class SuppressExceptionInterceptor implements MethodInterceptorInterface
 {

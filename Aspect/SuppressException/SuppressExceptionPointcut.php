@@ -1,10 +1,10 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Aspect\SuppressException;
+namespace SibSet\Bundle\AopFeatureBundle\Aspect\SuppressException;
 
 use Doctrine\Common\Annotations\Reader;
 use JMS\AopBundle\Aop\PointcutInterface;
-use SibSet\Bundle\AopBundle\Annotation\SuppressException;
+use SibSet\Bundle\AopFeatureBundle\Annotation\SuppressException;
 
 class SuppressExceptionPointcut implements PointcutInterface
 {

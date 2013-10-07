@@ -1,6 +1,6 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Tests\Annotation;
+namespace SibSet\Bundle\AopFeatureBundle\Tests\Annotation;
 
 abstract class BaseAnnotationTest extends \PHPUnit_Framework_TestCase
 {

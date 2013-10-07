@@ -1,14 +1,14 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Tests\Annotation;
+namespace SibSet\Bundle\AopFeatureBundle\Tests\Annotation;
 
-use SibSet\Bundle\AopBundle\Annotation\Logging;
+use SibSet\Bundle\AopFeatureBundle\Annotation\Logging;
 
 class LoggingTest extends BaseAnnotationTest
 {
     public function testClassMethod()
     {
-        $this->assertEquals('SibSet\Bundle\AopBundle\Annotation\Logging', Logging::getClass());
+        $this->assertEquals('SibSet\Bundle\AopFeatureBundle\Annotation\Logging', Logging::getClass());
     }
 
     public function testAnnotation()

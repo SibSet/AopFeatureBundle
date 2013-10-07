@@ -1,12 +1,12 @@
 parameters:
-    sibset_aop.aspect.suppress_exception.pointcut.class: SibSet\Bundle\AopBundle\Aspect\SuppressException\SuppressExceptionPointcut
-    sibset_aop.aspect.suppress_exception.interceptor.class: SibSet\Bundle\AopBundle\Aspect\SuppressException\SuppressExceptionInterceptor
+    sibset_aop.aspect.suppress_exception.pointcut.class: SibSet\Bundle\AopFeatureBundle\Aspect\SuppressException\SuppressExceptionPointcut
+    sibset_aop.aspect.suppress_exception.interceptor.class: SibSet\Bundle\AopFeatureBundle\Aspect\SuppressException\SuppressExceptionInterceptor
 
-    sibset_aop.aspect.transaction.pointcut.class: SibSet\Bundle\AopBundle\Aspect\Transaction\TransactionPointcut
-    sibset_aop.aspect.transaction.interceptor.class: SibSet\Bundle\AopBundle\Aspect\Transaction\TransactionInterceptor
+    sibset_aop.aspect.transaction.pointcut.class: SibSet\Bundle\AopFeatureBundle\Aspect\Transaction\TransactionPointcut
+    sibset_aop.aspect.transaction.interceptor.class: SibSet\Bundle\AopFeatureBundle\Aspect\Transaction\TransactionInterceptor
 
-    sibset_aop.aspect.logging.pointcut.class: SibSet\Bundle\AopBundle\Aspect\Logging\LoggingPointcut
-    sibset_aop.aspect.logging.interceptor.class: SibSet\Bundle\AopBundle\Aspect\Logging\LoggingInterceptor
+    sibset_aop.aspect.logging.pointcut.class: SibSet\Bundle\AopFeatureBundle\Aspect\Logging\LoggingPointcut
+    sibset_aop.aspect.logging.interceptor.class: SibSet\Bundle\AopFeatureBundle\Aspect\Logging\LoggingInterceptor
 
 services:
 

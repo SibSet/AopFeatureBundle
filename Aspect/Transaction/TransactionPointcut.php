@@ -1,10 +1,10 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Aspect\Transaction;
+namespace SibSet\Bundle\AopFeatureBundle\Aspect\Transaction;
 
 use Doctrine\Common\Annotations\Reader;
 use JMS\AopBundle\Aop\PointcutInterface;
-use SibSet\Bundle\AopBundle\Annotation\Transactional;
+use SibSet\Bundle\AopFeatureBundle\Annotation\Transactional;
 
 class TransactionPointcut implements PointcutInterface
 {

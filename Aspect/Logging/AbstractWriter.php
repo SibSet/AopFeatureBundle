@@ -1,6 +1,6 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Aspect\Logging;
+namespace SibSet\Bundle\AopFeatureBundle\Aspect\Logging;
 
 use Psr\Log\LoggerInterface;
 

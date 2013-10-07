@@ -1,14 +1,14 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Tests\Annotation;
+namespace SibSet\Bundle\AopFeatureBundle\Tests\Annotation;
 
-use SibSet\Bundle\AopBundle\Annotation\Transactional;
+use SibSet\Bundle\AopFeatureBundle\Annotation\Transactional;
 
 class TransactionalTest extends BaseAnnotationTest
 {
     public function testClassMethod()
     {
-        $this->assertEquals('SibSet\Bundle\AopBundle\Annotation\Transactional', Transactional::getClass());
+        $this->assertEquals('SibSet\Bundle\AopFeatureBundle\Annotation\Transactional', Transactional::getClass());
     }
 
     public function testAnnotation()

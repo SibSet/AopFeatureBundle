@@ -1,10 +1,10 @@
 <?php
 
-namespace SibSet\Bundle\AopBundle\Aspect\Logging;
+namespace SibSet\Bundle\AopFeatureBundle\Aspect\Logging;
 
 use Doctrine\Common\Annotations\Reader;
 use JMS\AopBundle\Aop\PointcutInterface;
-use SibSet\Bundle\AopBundle\Annotation\Logging;
+use SibSet\Bundle\AopFeatureBundle\Annotation\Logging;
 
 class LoggingPointcut implements PointcutInterface
 {
