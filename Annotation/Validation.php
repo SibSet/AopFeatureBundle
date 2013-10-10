@@ -9,6 +9,8 @@ use Doctrine\Common\Annotations\Annotation;
  */
 class Validation
 {
+    public $groups;
+
     public static function getClass()
     {
         return __CLASS__;

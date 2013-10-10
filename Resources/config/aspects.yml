@@ -53,4 +53,4 @@ services:
             - { name: jms_aop.pointcut, interceptor: sibset_aop.aspect.validation.interceptor }
     sibset_aop.aspect.validation.interceptor:
         class: %sibset_aop.aspect.validation.interceptor.class%
-        arguments: [ @validator ]
+        arguments: [ @annotation_reader, @validator ]
